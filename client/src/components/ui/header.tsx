@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 export function Header() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -43,8 +43,8 @@ export function Header() {
             </Link>
           </nav>
           <div className="md:hidden">
-            <button 
-              className="text-neutral-700 focus:outline-none" 
+            <button
+              className="text-neutral-700 focus:outline-none"
               onClick={toggleMobileMenu}
               aria-label="Toggle menu"
             >
@@ -54,14 +54,14 @@ export function Header() {
             </button>
           </div>
         </div>
-        
+
         {/* Mobile menu */}
         <AnimatePresence>
           {isMobileMenuOpen && (
-            <motion.div 
-              className="md:hidden pb-4" 
-              initial={{ opacity: 0, height: 0 }} 
-              animate={{ opacity: 1, height: 'auto' }} 
+            <motion.div
+              className="md:hidden pb-4"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
             >

@@ -37,7 +37,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between">
-          <div className="text-sm text-gray-400 font-sans">© 2023 CommunionHub. All rights reserved.</div>
+          <div className="text-sm text-gray-400 font-sans">© 2025 CommunionHub. All rights reserved.</div>
           <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors font-sans">Privacy Policy</a>
             <a href="#" className="text-sm text-gray-400 hover:text-white transition-colors font-sans">Terms of Service</a>
